@@ -7,6 +7,8 @@ def inicio(request):
 def nosotros(request):
     return render(request, 'paginas/nosotros.html') #renderiza la página para utilizar y mostrar
 def libros(request):
-    return render(request, 'libros/index.html') #renderiza la página para utilizar y mostrar}
+    return render(request, 'libros/index.html') #renderiza la página para utilizar y mostrar
 def crear_libros(request):
     return render(request, 'libros/crear.html') #renderiza la página para utilizar y mostrar
+def editar_libros(request):
+    return render(request, 'libros/editar.html') #renderiza la página para utilizar y mostrar
