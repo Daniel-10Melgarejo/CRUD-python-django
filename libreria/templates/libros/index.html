@@ -4,7 +4,64 @@
 
 {% block contenido %} 
 
-Sección de Nosotros
+<div class="card">
+    <div class="card-header">
+        <a
+            name=""
+            id=""
+            class="btn btn-success"
+            href="{% url 'crear_libros' %}"
+            role="button"
+            >Agregar nuevo libro</a>
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Libros</h4>
+        <div
+            class="table-responsive"
+        >
+            <table
+                class="table table-primary"
+            >
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Titulo</th>
+                        <th scope="col">Imagen</th>
+                        <th scope="col">Descripcion</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="">
+                        <td>1</td>
+                        <td>Django con Python</td>
+                        <td>Imagen.jpg</td>
+                        <td>Libro que habla sobre el framework de Django</td>
+                        <td><a
+                            name=""
+                            id=""
+                            class="btn btn-info"
+                            href="{% url 'editar_libros' %}"
+                            role="button"
+                            >Editar</a>
+                            | 
+                            <a
+                            name=""
+                            id=""
+                            class="btn btn-danger"
+                            href="#"
+                            role="button"
+                            >Borrar</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    <div class="card-footer text-muted"></div>
+</div>
+
 
 {% endblock %}
     
